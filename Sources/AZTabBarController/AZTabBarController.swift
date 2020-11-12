@@ -545,8 +545,8 @@ open class AZTabBarController: UIViewController {
     open func setBadgeText(_ text: String?, atIndex index:Int){
         if let buttons = buttons{
             if index < buttons.count{
-                self.notificationBadgeAppearance.distanceFromCenterX = 15
-                self.notificationBadgeAppearance.distanceFromCenterY = -14
+                self.notificationBadgeAppearance.distanceFromCenterX = 18
+                self.notificationBadgeAppearance.distanceFromCenterY = -13
                 let button = buttons[index] as! AZTabBarButton
                 button.addBadge(text: text, appearance: notificationBadgeAppearance)
             }
