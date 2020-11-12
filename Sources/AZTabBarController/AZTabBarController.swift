@@ -351,7 +351,7 @@ open class AZTabBarController: UIViewController {
         buttonsContainer.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         buttonsContainer.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         buttonsContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        buttonsContainer.topAnchor.constraint(equalTo: self.controllersContainer.bottomAnchor).isActive = true
+        //        buttonsContainer.topAnchor.constraint(equalTo: self.controllersContainer.bottomAnchor).isActive = true
         buttonsContainer.topAnchor.constraint(equalTo: self.separatorLine.topAnchor).isActive = true
         buttonsContainerHeightConstraint = self.buttonsContainer.heightAnchor.constraint(equalToConstant: 50)
         buttonsContainerHeightConstraint.isActive = true
@@ -364,6 +364,7 @@ open class AZTabBarController: UIViewController {
         controllersContainer.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         controllersContainer.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         controllersContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        controllersContainer.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
     
     /// Public initializer that creates a controller using tabIcons and (optional) highlightedIcons.
