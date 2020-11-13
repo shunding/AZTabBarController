@@ -11,8 +11,8 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "EasyNotificationBadge",
-                 url: "https://github.com/Minitour/EasyNotificationBadge.git",
-                 from: "1.2.1"),
+                 url: "https://github.com/mrsnow-git/EasyNotificationBadge.git",
+                 .branch("tsum-dev")),
     ],
     targets: [
         .target(
