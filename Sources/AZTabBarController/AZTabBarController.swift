@@ -316,7 +316,7 @@ open class AZTabBarController: UIViewController {
     fileprivate lazy var buttonsColors: [UIColor?] = Array<UIColor?>(repeating: nil,count: self.tabCount)
 
     fileprivate var isRTL: Bool {
-        return UIApplication.shared.userInterfaceLayoutDirection == UIUserInterfaceLayoutDirection.rightToLeft
+        UIView.userInterfaceLayoutDirection(for: view.semanticContentAttribute) == .rightToLeft
     }
     
     /*
